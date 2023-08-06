@@ -21,10 +21,10 @@ public class ScannerEx {
 		age = scan.nextInt();
 		weight = scan.nextDouble();
 		
-		System.out.printf("당신의 이름은 %s 입니다.\n, name");
-		System.out.printf("당신의 주소는 %s 입니다.\n, address");
-		System.out.printf("당신의 나이는 %d 입니다.\n, age");
-		System.out.printf("당신의 체중은 %.1fkg 입니다.\n, weight");
+		System.out.printf("당신의 이름은 %s 입니다.\n", name);
+		System.out.printf("당신의 주소는 %s 입니다.\n", address);
+		System.out.printf("당신의 나이는 %d 입니다.\n", age);
+		System.out.printf("당신의 체중은 %.1fkg 입니다.\n", weight);
 	}
 
 }
