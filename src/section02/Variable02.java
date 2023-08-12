@@ -17,7 +17,7 @@ public class Variable02 {
 		System.out.println("char 형 변수에 저장된 문자: " + ch1);
 		
 		char ch2, ch3;
-		ch2 = '금';
+		ch2 = '금'; // 한자 가능
 		ch3 = '쀍';
 		System.out.println("ch2 저장된 문자: " + ch2);
 		System.out.println("ch3 저장된 문자: " + ch3);
