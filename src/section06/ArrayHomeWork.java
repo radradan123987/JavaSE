@@ -14,6 +14,7 @@ package section06;
  2. for문 1~49까지 대입하기
  3. 아래 모양으로 출력하기
 
+
 1 
 2 8 
 15 9 3 
@@ -33,5 +34,43 @@ package section06;
 
 */
 public class ArrayHomeWork {
+	public static void main(String[] args) {
+		// 7X7 2중배열 선언
+		int[][] array = new int[7][7];
+		
+		for(int i = 0; i < array.length; i++) {
+			for(int j = 0; j < array[i].length; j++) {
+				array[i][j] = i*7+j+1;
+				System.out.print(array[i][j]+" ");
+			}
+			System.out.println();
+		}
+		System.out.println();
+		
+		for(int i = 0; i < 13; i++) {
+			if(i < 7) {
+				for(int j = 0; j < i+1; j++) {
+					if(i % 2 == 0) {
+						System.out.print(array[i-j][j]+" ");
+					} else {
+						System.out.print(array[j][i-j]+" ");
+					}
+				}
+				
+			} else {
+				for(int j = 0; j < 13-i; j++) {
+					if(i % 2 == 0) {
+						System.out.print(array[6-j][i-6+j]+" ");
+					} else {
+						System.out.print(array[i-6+j][6-j]+" ");
+					}
+				}
+			}
+			
+			System.out.println();
+			
+		}
+		
+	}
 
 }
