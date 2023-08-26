@@ -19,17 +19,17 @@ public class Polymorphism03 {
 		 * 3. AIRemoteControl
 		 */
 		RemoteControl rc = aiRC;
-		rc.getInfo();
+		rc.getInfo(); //3
 		
 		System.out.println(System.identityHashCode(rc));
 		
 		SmartRemoteControl smartRC = (SmartRemoteControl) rc;
-		smartRC.getInfo();
+		smartRC.getInfo(); //3
 		
 		System.out.println(System.identityHashCode(smartRC));
 		
 		AIRemoteControl aiRC2 = (AIRemoteControl) smartRC;
-		aiRC2.getInfo();
+		aiRC2.getInfo(); //3
 		
 		System.out.println(System.identityHashCode(aiRC2));
 	}
