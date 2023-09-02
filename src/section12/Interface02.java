@@ -22,14 +22,14 @@ public class Interface02 {
 		System.out.println("---Microphone으로 타입 변환---");
 		Microphone mic = tj;
 		//mic.connect();
-		mic.music();
-		//mic.sing();
+		//mic.music();
+		mic.sing();
 		
 		System.out.println("--- Speker로 타입 변환---");
 		Speaker s = tj;
 		//s.connect();
-		//s.music();
-		s.sing();
+		s.music();
+		//s.sing();
 		
 	}
 
