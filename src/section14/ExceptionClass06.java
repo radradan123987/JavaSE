@@ -16,7 +16,7 @@ public class ExceptionClass06 {
 			
 			if(age < 0) {
 				// 0살 미만인 경우 입력 실패
-				throw new InputErrorException("입력이 잘못되었습니다.")
+				throw new InputErrorException("입력이 잘못되었습니다.");
 			}
 			
 			if(age > 19) {
