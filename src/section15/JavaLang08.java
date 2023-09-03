@@ -42,11 +42,13 @@ public class JavaLang08 {
 		}
 		
 		// 문자열 절삭
-		substring
+		String str7 = "ABCDEF";
+		String substring = str7.substring(0, 2);
+		System.out.println("substring: " + substring);
 		
 		// 소문자 변환
 		String str8 = "abcDEF";
-		String toLOwerCase = str8.toLowerCase();
+		String toLowerCase = str8.toLowerCase();
 		System.out.println("toLowerCase: " + toLowerCase);
 		
 		// 대문자 변환

@@ -34,7 +34,7 @@ public class JavaLang06 {
 		Double dNum = Double.valueOf(3.141592);
 		
 		// 문자형 타입 선언
-		Character ch = Character.valueOf("A")
+		Character ch = Character.valueOf('A');
 		
 	}
 
