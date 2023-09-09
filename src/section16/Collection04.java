@@ -54,9 +54,10 @@ public class Collection04 {
 		System.out.println("map 길이: " + map.size());
 		
 		// 키 값을 통해 특정 데이터 삭제
-		map.remove(keys2);
+		map.remove("Bob");
 		
-		
+		// 데이터 전체 삭제
+		map.clear();
 		
 		
 		

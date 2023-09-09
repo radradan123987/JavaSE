@@ -29,7 +29,7 @@ public class Collection06 {
 			int id = member.getId();
 			String name = member.getName();
 			String mobile = member.getMobile();
-			String addr = mrmber.getAddr();
+			String addr = member.getAddr();
 			
 			System.out.println(id + "\t" + name + "\t" + mobile + "\t" + addr);
 		}

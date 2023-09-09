@@ -23,24 +23,24 @@ public class Collection05 {
 		
 		member1.put("id", 1);
 		member1.put("name", "홍길동");
-		member1.put("mobile", 01011111111);
+		member1.put("mobile", "01011111111");
 		member1.put("addr", "서울특별시");
 		
 		member2.put("id", 2);
 		member2.put("name", "짱구");
-		member2.put("mobile", 01022222222);
+		member2.put("mobile", "01022222222");
 		member2.put("addr", "떡잎마을");
 		
 		member3.put("id", 3);
 		member3.put("name", "둘리");
-		member3.put("mobile", 01033333333);
+		member3.put("mobile", "01033333333");
 		member3.put("addr", "쌍문동");
 		
 		memberList.add(member1);
 		memberList.add(member2);
 		memberList.add(member3);
 		
-		System.out.println("no\tname\tmobile\taddr");
+		System.out.println("no\tname\tmobile\t\taddr");
 		for(Map<String, Object> member : memberList) {
 			int id = (int) member.get("id");
 			String name = (String) member.get("name");

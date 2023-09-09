@@ -2,32 +2,32 @@ package section16;
 
 public class MemberVO {
 	private int id;
-	private int String name;
-	private int String mobile;
-	private int String
+	private String name;
+	private String mobile;
+	private String addr;
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getString() {
-		return String;
+	public String getName() {
+		return name;
 	}
-	public void setString(int string) {
-		String = string;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public int getString() {
-		return String;
+	public String getMobile() {
+		return mobile;
 	}
-	public void setString(int string) {
-		String = string;
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
 	}
-	public int getString() {
-		return String;
+	public String getAddr() {
+		return addr;
 	}
-	public void setString(int string) {
-		String = string;
+	public void setAddr(String addr) {
+		this.addr = addr;
 	}
 	
 	
