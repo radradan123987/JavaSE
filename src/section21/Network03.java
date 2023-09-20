@@ -45,7 +45,7 @@ public class Network03 {
 //		}
 //		System.out.println();
 		
-		
+		// getInputStream() 메소두는 URLConnection 에서 입력스트림으로 데이터를 읽어온다.
 		InputStream in = urlConn.getInputStream();
 		InputStreamReader isr = new InputStreamReader(in, "UTF-8");
 		BufferedReader br = new BufferedReader(isr);

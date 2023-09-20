@@ -7,7 +7,7 @@ import java.net.URL;
  * URL
  * 	인터넷에서 웹 페이지, 이미지, 동영상 등과 같은 리소스를 찾을 수 있는 주소
  * 
- * 
+ * https:// n.news.naver.com:443/article/215/0001125423?ntype=RANKING
  * 
  * 프로토콜(protocol)
  * 	컴퓨터 네트워크를 통해 통신을 수행하기 위한 표준 규칙, 절차, 혹은 통신 프로세스를 의미
@@ -35,7 +35,7 @@ import java.net.URL;
  */
 public class Network02 {
 	public static void main(String[] args) throws MalformedURLException {
-		URL url = new URL("https://n.news.naver.com/mnews/article/014/0005073333?sid=105");
+		URL url = new URL("https:// n.news.naver.com:443/article/215/0001125423?ntype=RANKING");
 		
 		System.out.println("portocol: " + url.getProtocol());
 		System.out.println("host: " + url.getHost());
