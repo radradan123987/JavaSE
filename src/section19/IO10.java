@@ -9,7 +9,7 @@ import java.io.FileOutputStream;
  * try~with~resrouces
  * 	try 코드 블록이 끝나면 자동으로 resrouces를 종료해주는 긴ㅇ이다.
  * 
- *   상속받은 클래스만 가능!
+ *  AutoCloseable 상속받은 클래스만 가능!
  * 
  */
 public class IO10 {

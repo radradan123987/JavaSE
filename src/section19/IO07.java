@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 
 /*
- * 
+ * PrintStream
  * 출력을 다루기위한 클래스
  * 콜솔/파일데이터를 쓸 떄 사용된다.
  * 

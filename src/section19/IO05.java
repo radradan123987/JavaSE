@@ -1,10 +1,11 @@
 package section19;
 
-import java.io.BufferedInputStream;
+import java.io.BufferedInputStream; 
 import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.IOException;
 
 /*
  * 
@@ -33,20 +34,22 @@ public class IO05 {
 				bos.write(b, 0, readByteCnt);
 			}
 			
-			bos.flush();
+			bos.flush(); // 버퍼에 남은 데이터를 파일에 쓰고 버퍼를 비움
 			
 			System.out.println("파일이 복사 완료하였습니다.");
 			
 		} catch (IOException e) {
 			e.printStackTrace();
 		} finally {
-			try {
-			if(bos != null) bos.close();
-			if(bos != null) bos.close();
-			if(bos != null) bos.close();
-			if(bos != null) bos.close();
+			   try {
+			          if(bos != null) bos.close();
+			          if(bos != null) bos.close();
+			          if(bos != null) bos.close();
+			          if(bos != null) bos.close();
+		} catch (IOException e) {
+			     e.printStackTrace();
 		}
 		
 	}
-
+  }
 }

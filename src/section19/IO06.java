@@ -7,8 +7,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 /*
- * 
- * 문자단위로 파일을 읽기/쓰기 기능을 제공하는 클래스
+ * FileReader / FileWriter
+ * 	문자단위로 파일을 읽기/쓰기 기능을 제공하는 클래스
  * 
  */
 public class IO06 {
@@ -21,7 +21,7 @@ public class IO06 {
 		
 		try {
 			
-			fr new FileReader(",/upload/hello.txt");
+			fr = new FileReader("./upload/hello.txt");
 			br = new BufferedReader(fr);
 			
 			fw = new FileWriter("./upload2/hello4.txt");
@@ -39,15 +39,19 @@ public class IO06 {
 			
 			System.out.println("문자단위로 파일 복사 완료!");
 			
+			
+			
 		} catch(IOException e) {
 			e.printStackTrace();
 		} finally {
 			try {
-				
-			} catch (IOException e) {
-				
+				if(bw != null) bw.close();
+				if(fw != null) fw.close();
+				if(br != null) br.close();
+				if(fr != null) fr.close();
+			} catch (IOException e2) {
+				e2.printStackTrace();
 			}
 		}
 	}
-
 }
